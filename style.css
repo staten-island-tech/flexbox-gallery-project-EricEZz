@@ -33,10 +33,13 @@ body {
 transform:scale(1.1);
 }
 .card-title:hover{
-    transform: rotate(0.5turn);
+    transform: rotate(2turn);
+    background-image: linear-gradient(120deg,transparent,transparent 50%,#fafafa);
+    transition: all .4s;
 }
 .card-description:hover{
-    scrollbar-highlight-color: aliceblue;
+align-items: baseline;
+color: #f92;
 }
 
 .card-title{
@@ -50,6 +53,7 @@ width: 90%;
 height: 40%;
 object-fit: cover;
 object-position: 55% 55%;
+
 }
 .card-description{
     font-size: 1.2rem;
@@ -68,4 +72,26 @@ object-position: 55% 55%;
     text-align: center;
     font-size: 100px;
     font-family: 'Fuggles', cursive;
+    animation: animation 4s;
+}
+.header:hover{
+    transform: skew(30deg, 20deg);
+}
+
+@keyframes animation {
+    0%{
+transform: scale(3);
+    }
+    25%{
+transform: scale(4);
+    }
+    50%{
+transform: scale(6);
+    }
+    75%{
+transform: scale(4);
+    }
+    100%{
+transform: scale(1);
+    }
 }
