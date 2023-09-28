@@ -14,7 +14,7 @@ body {
 }
 
 .card{
-    height: 50vh;
+    height: 30vh;
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -53,8 +53,24 @@ width: 90%;
 height: 40%;
 object-fit: cover;
 object-position: 55% 55%;
-
 }
+@media screen and (max-width:1000px) {
+    .card{
+        width:40%;
+    }
+ }
+ 
+ @media screen and (max-width:812px) {
+    .card{
+        width:100%;
+    }
+ }
+ @media screen and (max-width:768px) {
+    .card{
+    width: 40%;
+    }
+ }
+
 .card-description{
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
